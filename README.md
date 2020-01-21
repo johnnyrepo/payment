@@ -11,5 +11,5 @@
 ## H2 database crtedentials
 * sa / secret
 
-## Payment records for testing are inserted by data.sql script
-
+## Payment records for testing are inserted by PaymentDataInitializer script
+A total of 9 records are inserted

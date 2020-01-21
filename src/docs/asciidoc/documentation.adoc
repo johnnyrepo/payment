@@ -1,0 +1,29 @@
+= Payment Service REST endpoints
+:doctype: book
+:icons: font
+:source-highlighter: prettify
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+== Payment
+
+=== Get All Payments
+Returns all non-cancelled payments ('cancelledFee' is null)  of all types (Payment1, Payment2, Payment3)
+
+operation::payments/get-all[snippets='http-request,response-body']
+
+=== Get Payment cancellationFee By Id
+Returns Payment 'id' and 'cancellationFee' if found by specified 'id'. Throws exception if specified payment not found
+
+operation::payments/get-id-and-cancellation-fee[snippets='http-request,path-parameters,response-body']
+
+=== Get Non-Cancelled Payment id-s
+Returns list of id-s of payments with non-cancelled status. Can filter out the result by range of min and max amounts
+
+operation::payments/non-cancelled[snippets='http-request,request-parameters,response-body']
+
+=== Cancel Payment
+Cancels payment in case it is possible and returns updated payment. Throws exceptions in case of inability to cancel
+
+operation::payments/cancel[snippets='http-request,path-parameters,response-body']

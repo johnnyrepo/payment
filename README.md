@@ -8,8 +8,8 @@
 ## How to Stop
  * `./gradlew -stop`
  
-## H2 database crtedentials
-* sa / secret
+## H2 database credentials
+* `sa / secret`
 
 ## Payment records for testing are inserted by PaymentDataInitializer script
-A total of 9 records are inserted and can be viewed after application start up under /payments url
+A total of 9 records are inserted and can be viewed after application start up under `/payments` url
